@@ -129,7 +129,7 @@ app.post('/api/login', (req, res) => {
 });
 
 //Task 8
-app.post('/api/books/review/:id', (req, res) => {
+app.put('/api/books/review/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const { review } = req.body;
 
